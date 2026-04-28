@@ -1,0 +1,18 @@
+# Node
+node_modules/
+
+# TypeScript 컴파일 결과
+dist/
+*.js
+
+# 환경변수
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
