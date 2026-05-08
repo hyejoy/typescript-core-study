@@ -63,3 +63,20 @@ fetchsData((error: Error | null, data: string | null): void => {
     console.log(data);
   }
 });
+
+const greet: (name: string) => string = (name) => `Hello ${name}`;
+console.log(greet("철수"));
+
+const greet1: { (name: string): string } = (name) => `hello ${name}`;
+
+interface Person {
+  name: string;
+  [key: string]: string | (() => string);
+}
+
+const perseon01: Person = {
+  name: "이철수",
+  getName() {
+    return this.name;
+  },
+};
